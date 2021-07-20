@@ -1,0 +1,149 @@
+body{
+    background-color: #F3F1FF;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.container{
+    width: 870px;
+    height: 579px;
+    background:white;
+    border-radius: 5px;
+    padding: 30px;
+    margin-bottom: 21px;
+        
+}
+
+h1{
+    color: #562EFF;
+
+}
+hr{
+    1px solid #D1D1D1;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    margin-bottom: 30px;
+    
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.name{
+    margin-left: 20px;
+}
+.thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blog{
+    display: flex;   
+}
+.author-info{
+    margin-left: 16px;
+}
+span{
+    color: #562EFF;
+
+}
+.top-blogs{
+    margin-bottom: 42px;
+}
+.container2{
+    width: 870px;
+    height: 360px;
+    background:white;
+    border-radius: 5px;
+    padding: 30px;
+}
+.course{
+    width: 250px;
+    height:250px;
+    border: 1px solid #FFFFFF;
+    padding: 13px;
+}           
+.course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-title p{
+    color:#ED6B4F;
+}
+.fa-star{
+    color:#FFC014;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icons p{
+    color: #A2A2A2;
+
+}
+.clock{
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    width: 94.83px;
+    height: 29.38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock i{
+    color: #FF4A60;
+    margin-right: 5px;
+}
+.clock p{
+    color: #FF4A60; 
+}
+.courses{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media only screen and (max-width:688px) {
+    .container, .container2{
+        width: 100%;
+        height: 100%;
+        background-color: #F3F1FF;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .courses{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 688px) and (max-width:992px) {
+    .container, .container2{
+        width:100%;
+        height: 100%;
+    }
+    .players, .blogs{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+    
+
